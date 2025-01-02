@@ -1,0 +1,26 @@
+{
+  "name": "dandelions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+   "dev": " cross-env NODE_ENV=development node backend/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+		"start": "cross-env NODE_ENV=production node backend/server.js"
+  },
+  "type": "module",
+  "author": "ankush kuamr",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@chakra-ui/react": "^3.2.3",
+    "@emotion/react": "^11.14.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "i": "^0.3.7",
+    "mongoose": "^8.9.2",
+    "npm": "^11.0.0",
+    "react-router-dom": "^7.1.1"
+  }
+}
